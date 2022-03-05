@@ -57,7 +57,7 @@ res.json({ message: err });
     })
     */
 // save data into database
-    user.save()
+user.save()
 .then(data =>{
     res.json(data);
 })
@@ -128,5 +128,6 @@ router.patch('/:userId',async(req,res)=>{
         res.json({ message: err});
     }
 });
+
 
 module.exports = router;

@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "4220fbbc-e180-4ea1-a838-23d246e5b276",
-		"name": "New Collection",
+		"name": "postman_collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n    \"name\":\"Gudiya\",\r\n    \"email\":\"abc@gmail.com\",\r\n    \"password\":\"Gudiya12\",\r\n    \"age\":20\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,26 +20,25 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3004/users/62205961fb412afa1e64b949",
+					"raw": "localhost:3005/users",
 					"host": [
 						"localhost"
 					],
-					"port": "3004",
+					"port": "3005",
 					"path": [
-						"users",
-						"62205961fb412afa1e64b949"
+						"users"
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "Get users",
+					"name": "POST insert",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Gudiya\",\r\n    \"email\":\"abc@gmail.com\",\r\n    \"password\":\"Gudiya12\",\r\n    \"age\":20\r\n}",
+							"raw": "{\r\n    \"name\":\"Gudiya\",\r\n    \"email\":\"abc23@gmail.com\",\r\n    \"password\":\"Gudia12\",\r\n    \"age\":20\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -71,15 +70,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "113"
+							"value": "167"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"71-IFxezzGT2bArob5od+ytzLzCKNo\""
+							"value": "W/\"a7-eiVldMd4QsW0SAT4outvMYbvmV4\""
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 03 Mar 2022 20:19:58 GMT"
+							"value": "Sat, 05 Mar 2022 16:54:49 GMT"
 						},
 						{
 							"key": "Connection",
@@ -91,16 +90,199 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"name\": \"Gudiya\",\n    \"email\": \"abc@gmail.com\",\n    \"password\": \"Gudiya12\",\n    \"age\": 20,\n    \"_id\": \"622122ee8da08ac112a4b511\",\n    \"__v\": 0\n}"
+					"body": "{\n    \"name\": \"Gudiya\",\n    \"email\": \"abc23@gmail.com\",\n    \"password\": \"$2a$08$kUv5QwaLcNnMW2aFa9Vn4OM3nKGqV/K5SgMPYKvgf.xHNPOj0ZCaO\",\n    \"age\": 20,\n    \"_id\": \"622395d9a805e879c34abdb4\",\n    \"__v\": 0\n}"
 				},
 				{
-					"name": "Get users",
+					"name": "post insert1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"somiya\",\r\n    \"email\":\"so23@gmail.com\",\r\n    \"password\":\"somu123\",\r\n    \"age\":21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3005/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "166"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a6-caHcWtUXDufaN6EQzGcmoxCYmrg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Mar 2022 16:56:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"somiya\",\n    \"email\": \"so23@gmail.com\",\n    \"password\": \"$2a$08$VGRZr02gZPbW/5S592k7Fe7EsGlWCKxtQh8Hk.lysqfIG8CeMoZYW\",\n    \"age\": 21,\n    \"_id\": \"62239628a805e879c34abdb6\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "post insert2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"poonam\",\r\n    \"email\":\"poonam23@gmail.com\",\r\n    \"password\":\"punam123\",\r\n    \"age\":21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3005/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "170"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"aa-HtMf5UT3lJUGkX95lMLTGFrczeI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Mar 2022 16:57:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"poonam\",\n    \"email\": \"poonam23@gmail.com\",\n    \"password\": \"$2a$08$5lzOQlFqGfScmR0GnFlu4.TMOvEZMsZHGrT6PhK8oiigbp.bF9nwK\",\n    \"age\": 21,\n    \"_id\": \"62239666a805e879c34abdb8\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "post insert3",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"diviya\",\r\n    \"email\":\"di23@gmail.com\",\r\n    \"password\":\"diviya123\",\r\n    \"age\":20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3005/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "166"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a6-gwvYnBwJwr3hsfqOzzLIgIrqU+w\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Mar 2022 16:58:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"diviya\",\n    \"email\": \"di23@gmail.com\",\n    \"password\": \"$2a$08$6UzDIMruMombWlyqbq50yuB79.Sm88ztGRbMYi2iJywcd3GnqNqVu\",\n    \"age\": 20,\n    \"_id\": \"622396a4a805e879c34abdba\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Get find",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Gudiya\",\r\n    \"email\":\"abc@gmail.com\",\r\n    \"password\":\"Gudiya12\",\r\n    \"age\":20\r\n}",
+							"raw": "{\r\n    \"name\":\"diviya\",\r\n    \"email\":\"di23@gmail.com\",\r\n    \"password\":\"diviya123\",\r\n    \"age\":20\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -132,15 +314,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "216"
+							"value": "674"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"d8-tu9JOQLE3j6p7tGHnpQsEy5TXMw\""
+							"value": "W/\"2a2-7iqo35NvsOLHUErh8tnfRBsar50\""
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 03 Mar 2022 20:23:58 GMT"
+							"value": "Sat, 05 Mar 2022 16:58:52 GMT"
 						},
 						{
 							"key": "Connection",
@@ -152,16 +334,202 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"622121afe4e8ebbc54b58d1d\",\n        \"name\": \"20\",\n        \"email\": \"abc@gmail.com\",\n        \"password\": \"Gudiya12\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"622122ee8da08ac112a4b511\",\n        \"name\": \"Gudiya\",\n        \"email\": \"abc@gmail.com\",\n        \"password\": \"Gudiya12\",\n        \"age\": 20,\n        \"__v\": 0\n    }\n]"
+					"body": "[\n    {\n        \"_id\": \"622395d9a805e879c34abdb4\",\n        \"name\": \"Gudiya\",\n        \"email\": \"abc23@gmail.com\",\n        \"password\": \"$2a$08$kUv5QwaLcNnMW2aFa9Vn4OM3nKGqV/K5SgMPYKvgf.xHNPOj0ZCaO\",\n        \"age\": 20,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62239628a805e879c34abdb6\",\n        \"name\": \"somiya\",\n        \"email\": \"so23@gmail.com\",\n        \"password\": \"$2a$08$VGRZr02gZPbW/5S592k7Fe7EsGlWCKxtQh8Hk.lysqfIG8CeMoZYW\",\n        \"age\": 21,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62239666a805e879c34abdb8\",\n        \"name\": \"poonam\",\n        \"email\": \"poonam23@gmail.com\",\n        \"password\": \"$2a$08$5lzOQlFqGfScmR0GnFlu4.TMOvEZMsZHGrT6PhK8oiigbp.bF9nwK\",\n        \"age\": 21,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"622396a4a805e879c34abdba\",\n        \"name\": \"diviya\",\n        \"email\": \"di23@gmail.com\",\n        \"password\": \"$2a$08$6UzDIMruMombWlyqbq50yuB79.Sm88ztGRbMYi2iJywcd3GnqNqVu\",\n        \"age\": 20,\n        \"__v\": 0\n    }\n]"
 				},
 				{
-					"name": "Get users",
+					"name": "Get find by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"diviya\",\r\n    \"email\":\"di23@gmail.com\",\r\n    \"password\":\"diviya123\",\r\n    \"age\":20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3005/users/62239628a805e879c34abdb6",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"users",
+								"62239628a805e879c34abdb6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "166"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a6-GiCFjCErDiG3NeVtAp242Rr2voQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Mar 2022 17:00:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"62239628a805e879c34abdb6\",\n    \"name\": \"somiya\",\n    \"email\": \"so23@gmail.com\",\n    \"password\": \"$2a$08$VGRZr02gZPbW/5S592k7Fe7EsGlWCKxtQh8Hk.lysqfIG8CeMoZYW\",\n    \"age\": 21,\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Delete by id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"diviya\",\r\n    \"email\":\"di23@gmail.com\",\r\n    \"password\":\"diviya123\",\r\n    \"age\":20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3005/users/62239628a805e879c34abdb6",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"users",
+								"62239628a805e879c34abdb6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Mar 2022 17:01:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true,\n    \"deletedCount\": 1\n}"
+				},
+				{
+					"name": "update by id",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"divi\",\r\n    \"email\":\"di23@gmail.com\",\r\n    \"password\":\"diviya123\",\r\n    \"age\":20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3005/users/62239666a805e879c34abdb8",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"users",
+								"62239666a805e879c34abdb8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e-WzibJtRR8IBMD+72ymDOMG90dCQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Mar 2022 17:05:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {}\n}"
+				},
+				{
+					"name": "post task insert",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"description\":\"connection\",\r\n    \"completed\":true\r\n}",
+							"raw": "{\r\n    \"description\":\"master student\",\r\n    \"completed\":\"true\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -193,15 +561,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "86"
+							"value": "124"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"56-n1fJUf1dB9DdOCWhLHqmrUzDNNY\""
+							"value": "W/\"7c-obWm0sj5rfThEpb4V709GxySa24\""
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 03 Mar 2022 21:06:07 GMT"
+							"value": "Sat, 05 Mar 2022 17:13:49 GMT"
 						},
 						{
 							"key": "Connection",
@@ -213,121 +581,16 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"description\": \"connection\",\n    \"completed\": true,\n    \"_id\": \"62212dbfb5e73ce85f7d6041\",\n    \"__v\": 0\n}"
+					"body": "{\n    \"description\": \"master student\",\n    \"completed\": true,\n    \"date\": \"2022-03-05T17:13:49.683Z\",\n    \"_id\": \"62239a4d41f87a26387fae13\",\n    \"__v\": 0\n}"
 				},
 				{
-					"name": "Get users",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:3005/users",
-							"host": [
-								"localhost"
-							],
-							"port": "3005",
-							"path": [
-								"users"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "216"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"d8-tu9JOQLE3j6p7tGHnpQsEy5TXMw\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 03 Mar 2022 21:34:10 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"622121afe4e8ebbc54b58d1d\",\n        \"name\": \"20\",\n        \"email\": \"abc@gmail.com\",\n        \"password\": \"Gudiya12\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"622122ee8da08ac112a4b511\",\n        \"name\": \"Gudiya\",\n        \"email\": \"abc@gmail.com\",\n        \"password\": \"Gudiya12\",\n        \"age\": 20,\n        \"__v\": 0\n    }\n]"
-				},
-				{
-					"name": "Get users",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:3005/users/622121afe4e8ebbc54b58d1d",
-							"host": [
-								"localhost"
-							],
-							"port": "3005",
-							"path": [
-								"users",
-								"622121afe4e8ebbc54b58d1d"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "100"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"64-DPK69MgjxtZmrdFMK7oEwzFg7Jw\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 03 Mar 2022 21:35:50 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"_id\": \"622121afe4e8ebbc54b58d1d\",\n    \"name\": \"20\",\n    \"email\": \"abc@gmail.com\",\n    \"password\": \"Gudiya12\",\n    \"__v\": 0\n}"
-				},
-				{
-					"name": "Get users",
+					"name": "post task insert1",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"ABC\",\r\n    \"email\":\"abc23@gmail.com\",\r\n    \"password\":\"abc212\",\r\n    \"age\":20\r\n}",
+							"raw": "{\r\n    \"description\":\"connection\",\r\n    \"completed\":\"true\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -335,14 +598,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3005/users/",
+							"raw": "localhost:3005/task",
 							"host": [
 								"localhost"
 							],
 							"port": "3005",
 							"path": [
-								"users",
-								""
+								"task"
 							]
 						}
 					},
@@ -360,15 +622,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "110"
+							"value": "120"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"6e-YbgGoH1qoobNniYwgoSklpFshVs\""
+							"value": "W/\"78-3AcE8JS9S0H8Bpjp9dORXcNXiXo\""
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 03 Mar 2022 22:22:37 GMT"
+							"value": "Sat, 05 Mar 2022 17:14:27 GMT"
 						},
 						{
 							"key": "Connection",
@@ -380,208 +642,21 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"name\": \"ABC\",\n    \"email\": \"abc23@gmail.com\",\n    \"password\": \"abc212\",\n    \"age\": 20,\n    \"_id\": \"62213fad3450d4ad3ebd554c\",\n    \"__v\": 0\n}"
+					"body": "{\n    \"description\": \"connection\",\n    \"completed\": true,\n    \"date\": \"2022-03-05T17:14:27.733Z\",\n    \"_id\": \"62239a7341f87a26387fae15\",\n    \"__v\": 0\n}"
 				},
 				{
-					"name": "Get users",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"ABC\",\r\n    \"email\":\"abc23@gmail.com\",\r\n    \"password\":\"abc212\",\r\n    \"age\":20\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3005/users/",
-							"host": [
-								"localhost"
-							],
-							"port": "3005",
-							"path": [
-								"users",
-								""
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "339"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"153-+kXhr2Vp2GsAYCvQShP64W5TYos\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 03 Mar 2022 22:23:10 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"622122ee8da08ac112a4b511\",\n        \"name\": \"Gudiya\",\n        \"email\": \"abc@gmail.com\",\n        \"password\": \"Gudiya12\",\n        \"age\": 20,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62213f533450d4ad3ebd5548\",\n        \"name\": \"poonam\",\n        \"email\": \"punam@gmail.com\",\n        \"password\": \"pu@12\",\n        \"age\": 20,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62213fad3450d4ad3ebd554c\",\n        \"name\": \"ABC\",\n        \"email\": \"abc23@gmail.com\",\n        \"password\": \"abc212\",\n        \"age\": 20,\n        \"__v\": 0\n    }\n]"
-				},
-				{
-					"name": "Get users",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"somu\",\r\n    \"email\":\"somu23@gmail.com\",\r\n    \"password\":\"somuc212\",\r\n    \"age\":20\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3005/users/",
-							"host": [
-								"localhost"
-							],
-							"port": "3005",
-							"path": [
-								"users",
-								""
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "114"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"72-Wy5S3st4SaSymOb1s56AA4PgNe8\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 03 Mar 2022 22:23:58 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"name\": \"somu\",\n    \"email\": \"somu23@gmail.com\",\n    \"password\": \"somuc212\",\n    \"age\": 20,\n    \"_id\": \"62213ffe3450d4ad3ebd554f\",\n    \"__v\": 0\n}"
-				},
-				{
-					"name": "Get users",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"somu\",\r\n    \"email\":\"somu23@gmail.com\",\r\n    \"password\":\"somuc212\",\r\n    \"age\":20\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3005/users/",
-							"host": [
-								"localhost"
-							],
-							"port": "3005",
-							"path": [
-								"users",
-								""
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "454"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"1c6-bBNSHDQxkR/pt/riou3cwVWzrD0\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 03 Mar 2022 22:24:13 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"622122ee8da08ac112a4b511\",\n        \"name\": \"Gudiya\",\n        \"email\": \"abc@gmail.com\",\n        \"password\": \"Gudiya12\",\n        \"age\": 20,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62213f533450d4ad3ebd5548\",\n        \"name\": \"poonam\",\n        \"email\": \"punam@gmail.com\",\n        \"password\": \"pu@12\",\n        \"age\": 20,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62213fad3450d4ad3ebd554c\",\n        \"name\": \"ABC\",\n        \"email\": \"abc23@gmail.com\",\n        \"password\": \"abc212\",\n        \"age\": 20,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62213ffe3450d4ad3ebd554f\",\n        \"name\": \"somu\",\n        \"email\": \"somu23@gmail.com\",\n        \"password\": \"somuc212\",\n        \"age\": 20,\n        \"__v\": 0\n    }\n]"
-				},
-				{
-					"name": "Get users",
+					"name": "Get task find",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3005/users/62213fad3450d4ad3ebd554c",
+							"raw": "localhost:3005/task",
 							"host": [
 								"localhost"
 							],
 							"port": "3005",
 							"path": [
-								"users",
-								"62213fad3450d4ad3ebd554c"
+								"task"
 							]
 						}
 					},
@@ -599,15 +674,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "110"
+							"value": "484"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"6e-02lu4RxeTF5wGRcpvcQKQ4Qk0Qk\""
+							"value": "W/\"1e4-gOD5jOiEzsuw93ZlfF94GHH70VI\""
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 03 Mar 2022 22:24:46 GMT"
+							"value": "Sat, 05 Mar 2022 17:15:02 GMT"
 						},
 						{
 							"key": "Connection",
@@ -619,22 +694,75 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"_id\": \"62213fad3450d4ad3ebd554c\",\n    \"name\": \"ABC\",\n    \"email\": \"abc23@gmail.com\",\n    \"password\": \"abc212\",\n    \"age\": 20,\n    \"__v\": 0\n}"
+					"body": "[\n    {\n        \"_id\": \"622399d35969de6635d96c00\",\n        \"description\": \"student\",\n        \"completed\": false,\n        \"date\": \"2022-03-05T17:11:47.089Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62239a3f41f87a26387fae11\",\n        \"description\": \"student\",\n        \"completed\": true,\n        \"date\": \"2022-03-05T17:13:35.599Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62239a4d41f87a26387fae13\",\n        \"description\": \"master student\",\n        \"completed\": true,\n        \"date\": \"2022-03-05T17:13:49.683Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62239a7341f87a26387fae15\",\n        \"description\": \"connection\",\n        \"completed\": true,\n        \"date\": \"2022-03-05T17:14:27.733Z\",\n        \"__v\": 0\n    }\n]"
 				},
 				{
-					"name": "Get users",
+					"name": "Get task find by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/task/622399d35969de6635d96c00",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"task",
+								"622399d35969de6635d96c00"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "118"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"76-sMw4gqh8CqeStqpGKiynkCbW2oA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 Mar 2022 17:15:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"622399d35969de6635d96c00\",\n    \"description\": \"student\",\n    \"completed\": false,\n    \"date\": \"2022-03-05T17:11:47.089Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Delete task by id",
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:3005/users/62213fad3450d4ad3ebd554c",
+							"raw": "localhost:3005/task/622399d35969de6635d96c00",
 							"host": [
 								"localhost"
 							],
 							"port": "3005",
 							"path": [
-								"users",
-								"62213fad3450d4ad3ebd554c"
+								"task",
+								"622399d35969de6635d96c00"
 							]
 						}
 					},
@@ -660,7 +788,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 03 Mar 2022 22:25:03 GMT"
+							"value": "Sat, 05 Mar 2022 17:16:27 GMT"
 						},
 						{
 							"key": "Connection",
@@ -675,13 +803,13 @@
 					"body": "{\n    \"acknowledged\": true,\n    \"deletedCount\": 1\n}"
 				},
 				{
-					"name": "Get users",
+					"name": "patch by id",
 					"originalRequest": {
 						"method": "PATCH",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"somia\"\r\n}",
+							"raw": "{\r\n    \"description\":\"connection establish\",\r\n    \"completed\":\"true\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -689,14 +817,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3005/users/62213ffe3450d4ad3ebd554f",
+							"raw": "localhost:3005/task/62239a3f41f87a26387fae11",
 							"host": [
 								"localhost"
 							],
 							"port": "3005",
 							"path": [
-								"users",
-								"62213ffe3450d4ad3ebd554f"
+								"task",
+								"62239a3f41f87a26387fae11"
 							]
 						}
 					},
@@ -722,7 +850,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 03 Mar 2022 22:40:56 GMT"
+							"value": "Sat, 05 Mar 2022 17:18:12 GMT"
 						},
 						{
 							"key": "Connection",
@@ -737,13 +865,13 @@
 					"body": "{\n    \"message\": {}\n}"
 				},
 				{
-					"name": "Get users",
+					"name": "patch task by id",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"somia\"\r\n}",
+							"raw": "{\r\n    \"description\":\"connection establish\",\r\n    \"completed\":\"true\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -751,14 +879,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3005/users/62213ffe3450d4ad3ebd554f",
+							"raw": "localhost:3005/task/62239a3f41f87a26387fae11",
 							"host": [
 								"localhost"
 							],
 							"port": "3005",
 							"path": [
-								"users",
-								"62213ffe3450d4ad3ebd554f"
+								"task",
+								"62239a3f41f87a26387fae11"
 							]
 						}
 					},
@@ -776,15 +904,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "115"
+							"value": "130"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"73-TC1ffLLfO7XalWBROMlRAfbKwFM\""
+							"value": "W/\"82-o/sjlh/1cs8R4fIEaqfzF5rZAto\""
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 03 Mar 2022 22:41:27 GMT"
+							"value": "Sat, 05 Mar 2022 17:20:42 GMT"
 						},
 						{
 							"key": "Connection",
@@ -796,131 +924,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"_id\": \"62213ffe3450d4ad3ebd554f\",\n    \"name\": \"somia\",\n    \"email\": \"somu23@gmail.com\",\n    \"password\": \"somuc212\",\n    \"age\": 20,\n    \"__v\": 0\n}"
-				},
-				{
-					"name": "Get users",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"somia\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3005/users/62213ffe3450d4ad3ebd554f",
-							"host": [
-								"localhost"
-							],
-							"port": "3005",
-							"path": [
-								"users",
-								"62213ffe3450d4ad3ebd554f"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "115"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"73-TC1ffLLfO7XalWBROMlRAfbKwFM\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 03 Mar 2022 22:42:26 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"_id\": \"62213ffe3450d4ad3ebd554f\",\n    \"name\": \"somia\",\n    \"email\": \"somu23@gmail.com\",\n    \"password\": \"somuc212\",\n    \"age\": 20,\n    \"__v\": 0\n}"
-				},
-				{
-					"name": "Get users",
-					"originalRequest": {
-						"method": "PATCH",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"somiy\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3005/users/62213ffe3450d4ad3ebd554f",
-							"host": [
-								"localhost"
-							],
-							"port": "3005",
-							"path": [
-								"users",
-								"62213ffe3450d4ad3ebd554f"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "14"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"e-WzibJtRR8IBMD+72ymDOMG90dCQ\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 03 Mar 2022 22:42:53 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"message\": {}\n}"
+					"body": "{\n    \"_id\": \"62239a3f41f87a26387fae11\",\n    \"description\": \"connection establish\",\n    \"completed\": true,\n    \"date\": \"2022-03-05T17:13:35.599Z\",\n    \"__v\": 0\n}"
 				}
 			]
 		}

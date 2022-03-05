@@ -6,7 +6,11 @@ const taskSchema = mongoose.Schema({
     },
     completed:{
         type:Boolean,
-        required:true
+        required:true,
+    },
+    date:{
+        type:Date,
+        default:Date.now
     }
 });
-module.exports = mongoose.model('Task',taskSchema);
+module.exports = mongoose.model('Task',taskSchema);                                         
